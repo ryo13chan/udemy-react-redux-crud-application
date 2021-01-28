@@ -2,8 +2,13 @@ import React, { Component } from 'react';
 
 class App  extends Component {
   render() {
-    return <div><h1>Hello, world!</h1></div>
-  }
+    return ( 
+      <React.Fragment>
+        <label htmlFor="bar">bar</label>
+        <input type="text" onChange={() => {console.log('aaaaa')}}></input>
+      </React.Fragment>
+    )
+  } 
 }
 
 export default App;
